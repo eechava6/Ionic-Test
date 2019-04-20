@@ -1,0 +1,10 @@
+<ion-content class="background" scrollbar-y-auto>
+<form class="BlackBox"></form>
+    <h1 class="userNameLabel">Usuario</h1>
+    <ion-input placeholder="Ingrese su usuario" class="userName"  [(ngModel)]="userName"> ></ion-input>   
+    <h1 class="userNameLabel">Contraseña</h1>
+    <ion-input type="password" placeholder="Ingrese su contraseña" class="userName"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
+    
+<button ion-button round color="dark" class="BlackButton" (click) = "tryLogin()">Comenzar</button>
+
+</ion-content>

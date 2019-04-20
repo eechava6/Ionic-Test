@@ -1,0 +1,36 @@
+
+<ion-header>
+    <ion-navbar color="dark" style="opacity: 0.9;">
+      <ion-title>
+         Grabado y reproducción
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+ 
+ <ion-content class="background" scrollbar-y-auto>
+      
+    <ion-card color="dark" style="opacity: 0.9;">
+      <ion-card-content>
+        <ion-card-title>
+          <button ion-button primary (click)="stopRecord()"  *ngIf="recording">
+            <ion-icon name="mic-off"></ion-icon>
+            &nbsp;&nbsp;Detener
+          </button>
+          <button ion-button primary (click)="startRecord()"  *ngIf="!recording">
+          <ion-icon name="mic"></ion-icon>
+            &nbsp;&nbsp;Grabar 
+          </button>
+        </ion-card-title>
+      </ion-card-content>
+    </ion-card>
+    
+<ion-list color="dark">
+   <ion-item *ngFor="let audio of audioList; index as i;" color="dark" style="opacity: 0.9;">
+        <p>{{audio.filename}}</p>
+        <button ion-button clear item-end large (click)="playAudio(audio.filename, i)"><ion-icon name="play"></ion-icon></button>
+    </ion-item>
+  </ion-list>
+  
+  <form class="BlackBox">
+  </form>
+  </ion-content>

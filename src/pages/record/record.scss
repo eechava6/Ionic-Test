@@ -1,0 +1,31 @@
+page-record {
+
+    [scrollbar-y-auto] .scroll-content {
+        overflow-y: hidden !important;
+      }
+
+    .BlackBox{
+        height: 100%;
+        position: absolute;
+        top:0px;
+        border-radius: 0px;
+        opacity: 0.65;
+        z-index: -1;
+     }
+     
+     .BlackButton{
+        opacity: 1.0;
+        top: 150px;
+        margin: 0 auto;
+        width: 180px;
+        text-align: center;
+        margin-bottom:30px;
+        font-size: 20px;
+    }
+
+    .GeneralClass{
+        opacity: 0.7;
+        align-content: center;
+    }
+
+}

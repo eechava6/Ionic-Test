@@ -1,0 +1,25 @@
+
+page-hello-ionic {
+.userName{
+    background-color : black;
+    color:white;
+    position: relative;
+    opacity: 0.65;
+    z-index: 1;
+    bottom: 100px;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.userNameLabel{
+    font-size: 20px;
+    position: relative;
+    opacity: 0.85;
+    z-index: 1;
+    bottom: 100px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+}
+}
+
